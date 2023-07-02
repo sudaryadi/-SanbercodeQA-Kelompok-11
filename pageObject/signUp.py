@@ -10,7 +10,7 @@ class SignUp:
     def __init__(self, driver) -> None:
         self.driver = driver()
     
-    def open_url(self, base_url):
+    def click_button_signUp(self):
         self.driver.find_element(By.LINK_TEXT, self.btn_signUp_linkText).click()
     
     def input_username(self, username):
@@ -19,5 +19,5 @@ class SignUp:
     def input_password(self, password):
         self.driver.find_element(By.ID, self.txt_password_id).send_keys(password)
     
-    def click_signUp(self):
+    def click_submit_signUp(self):
         self.driver.find_element(By.XPATH, self.btn_signUp_xpath).click()
