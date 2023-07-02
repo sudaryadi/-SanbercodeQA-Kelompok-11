@@ -7,7 +7,7 @@ class SignUp:
     txt_password_id = "sign-password"
     btn_signUp_xpath = '//*[@id="signInModal"]/div/div/div[3]/button[2]'
 
-    def __init__(self, driver) -> None:
+    def __init__(self, driver):
         self.driver = driver()
     
     def click_button_signUp(self):
