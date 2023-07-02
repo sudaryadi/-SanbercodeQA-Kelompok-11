@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 
 
 class SignUp:
-    base_url = "https://www.demoblaze.com"
     btn_signUp_linkText = "Sign up"
     txt_username_id = "sign-username"
     txt_password_id = "sign-password"
