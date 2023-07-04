@@ -8,9 +8,9 @@ class SignUp:
     btn_signUp_xpath = '//*[@id="signInModal"]/div/div/div[3]/button[2]'
 
     def __init__(self, driver):
-        self.driver = driver()
+        self.driver = driver
     
-    def click_button_signUp(self):
+    def click_button_signup(self):
         self.driver.find_element(By.LINK_TEXT, self.btn_signUp_linkText).click()
     
     def input_username(self, username):
@@ -19,5 +19,5 @@ class SignUp:
     def input_password(self, password):
         self.driver.find_element(By.ID, self.txt_password_id).send_keys(password)
     
-    def click_submit_signUp(self):
+    def click_submit_signup(self):
         self.driver.find_element(By.XPATH, self.btn_signUp_xpath).click()
