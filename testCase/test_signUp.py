@@ -8,7 +8,7 @@ class TestUserSignUp:
     password = "Admin123"
 
     def test_signup(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome(executable_path="./webdriver/chromedriver.exe")
         self.driver.get(self.base_url)
         self.driver.maximize_window()
         # Menggunakan import class SignUp dari pageObject
